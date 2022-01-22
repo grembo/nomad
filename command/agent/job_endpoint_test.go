@@ -2723,6 +2723,7 @@ func TestJobs_ApiJobToStructsJob(t *testing.T) {
 							Env:          helper.BoolToPtr(true),
 							ChangeMode:   helper.StringToPtr("c"),
 							ChangeSignal: helper.StringToPtr("sighup"),
+							File:         helper.BoolToPtr(true),
 						},
 						Templates: []*api.Template{
 							{
@@ -3128,6 +3129,7 @@ func TestJobs_ApiJobToStructsJob(t *testing.T) {
 							Env:          true,
 							ChangeMode:   "c",
 							ChangeSignal: "sighup",
+							File:         true,
 						},
 						Templates: []*structs.Template{
 							{

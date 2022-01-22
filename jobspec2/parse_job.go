@@ -64,6 +64,9 @@ func normalizeVault(v *api.Vault) {
 	if v.ChangeMode == nil {
 		v.ChangeMode = stringToPtr("restart")
 	}
+	if v.File == nil {
+		v.File = boolToPtr(true)
+	}
 }
 
 func normalizeNetworkPorts(networks []*api.NetworkResource) {

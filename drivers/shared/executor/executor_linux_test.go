@@ -240,6 +240,7 @@ etc/
 lib/
 lib64/
 local/
+private/
 proc/
 secrets/
 sys/

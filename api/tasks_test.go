@@ -508,6 +508,7 @@ func TestTask_Canonicalize_Vault(t *testing.T) {
 				Namespace:    stringToPtr(""),
 				ChangeMode:   stringToPtr("restart"),
 				ChangeSignal: stringToPtr("SIGHUP"),
+				File:         boolToPtr(true),
 			},
 		},
 	}
